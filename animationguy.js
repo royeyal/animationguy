@@ -55,8 +55,7 @@ gsap.from(".home_hero-header_lightbox", {
 	ease: "power3.inOut",
 });
 
-gsap.to(
-	{
+gsap.to(".section_home_features-list .heading-style-h3", {
 		backgroundImage: "linear-gradient(-100deg,rgba(255, 224, 0, 0.2),rgba(255, 224, 0, 0.7) 95%,rgba(255, 224, 0, 0.1))",
 		ease: "power1.out",
 		stagger: 0.2,
@@ -67,5 +66,4 @@ gsap.to(
 			end: "bottom 100%",
 			//markers: true,
 		},
-	}
-);
+});
