@@ -56,14 +56,15 @@ gsap.from(".home_hero-header_lightbox", {
 });
 
 gsap.to(".heading-style-h3", {
-		backgroundImage: "linear-gradient(-100deg,rgba(255, 224, 0, 0.2),rgba(255, 224, 0, 0.7) 95%,rgba(255, 224, 0, 0.1))",
-		ease: "power1.out",
-		stagger: 0.2,
-		duration: 1,
-		scrollTrigger: {
-			trigger: ".section_home_features-list",
-			start: "top 75%",
-			end: "bottom 100%",
-			markers: true,
-		},
+	backgroundImage:
+		"linear-gradient(-100deg,rgba(255, 224, 0, 0.2),rgba(255, 224, 0, 0.7) 95%,rgba(255, 224, 0, 0.1))",
+	ease: "power1.out",
+	stagger: 0.2,
+	duration: 1,
+	scrollTrigger: {
+		trigger: ".section_home_features-list",
+		start: "top 75%",
+		end: "bottom 100%",
+		markers: true,
+	},
 });
