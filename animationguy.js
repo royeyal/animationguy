@@ -27,25 +27,28 @@ function setupSplits() {
 }
 setupSplits();
 
-gsap.fromTo(
-	".home_features-list_image-wrapper img",
-	{
-		clipPath: "circle(0% at 50% 50%)",
-	},
-	{
-		clipPath: "circle(70% at 50% 50%)",
-		ease: "power1.out",
-		stagger: 0.2,
-		duration: 2,
-		scrollTrigger: {
-			trigger: ".home_features-list_image-wrapper",
-			start: "top 100%",
-			end: "bottom 50%",
-			//scrub: 5,
-			//markers: true,
+const imgElements = gsap.utils.toArray(".home_features-list_image-wrapper img");
+imgElements.forEach((img) => {
+	gsap.fromTo(
+		img,
+		{
+			clipPath: "circle(0% at 50% 50%)",
 		},
-	}
-);
+		{
+			clipPath: "circle(70% at 50% 50%)",
+			ease: "power1.out",
+			stagger: 0.2,
+			duration: 2,
+			scrollTrigger: {
+				trigger: img,
+				start: "top 100%",
+				end: "bottom 50%",
+				//scrub: 5,
+				//markers: true,
+			},
+		}
+	);
+}
 
 gsap.from(".home_hero-header_lightbox", {
 	delay: 0.3,
