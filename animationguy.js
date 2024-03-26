@@ -33,11 +33,13 @@ imgElements.forEach((img) => {
 		img,
 		{
 			clipPath: "circle(0% at 50% 50%)",
+			yPercent: 10,
 		},
 		{
 			clipPath: "circle(70% at 50% 50%)",
 			ease: "power1.out",
-			stagger: 0.2,
+			//stagger: 0.2,
+			yPercent: 0,
 			duration: 2,
 			scrollTrigger: {
 				trigger: img,
@@ -45,6 +47,9 @@ imgElements.forEach((img) => {
 				end: "bottom 50%",
 				//scrub: 5,
 				//markers: true,
+			},
+			stagger: {
+				amount: 2,
 			},
 		}
 	);
