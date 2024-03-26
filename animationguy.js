@@ -56,7 +56,7 @@ imgElements.forEach((img) => {
 			},
 		}
 	);
-}
+});
 
 gsap.from(".home_hero-header_lightbox", {
 	delay: 0.3,
