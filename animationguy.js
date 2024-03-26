@@ -38,10 +38,10 @@ gsap.fromTo(
 		stagger: 0.2,
 		duration: 2,
 		scrollTrigger: {
-			trigger: ".home_features-list_list",
-			start: "top 75%",
-			end: "bottom 100%",
-			scrub: 5,
+			trigger: ".home_features-list_image-wrapper",
+			start: "top 100%",
+			end: "bottom 50%",
+			//scrub: 5,
 			//markers: true,
 		},
 	}
