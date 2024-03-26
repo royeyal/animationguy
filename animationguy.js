@@ -49,7 +49,7 @@ imgElements.forEach((img) => {
 				//markers: true,
 			},
 			stagger: {
-				each: 0.2,
+				each: 0.3,
 				from: "center",
 				grid: "auto",
 				ease: "power2.inOut",
